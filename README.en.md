@@ -13,8 +13,30 @@ A Unity editor tool that automatically generates constant string paths for Resou
 
 ## Installation
 
-1. Copy the `AutoPathGenerator` folder into your Unity project's `Assets` folder
-2. The tool will automatically create its configuration file at `Assets/AutoPathGenerated/AutoPathGeneratorConfig.asset`
+### Via Package Manager
+
+For Unity 2019.3.4f1 or higher, you can install the package directly through the Package Manager using a Git URL.
+
+1. Open Package Manager (Window > Package Manager)
+2. Click '+' button and select "Add package from git URL"
+3. Enter the following URL:
+```
+https://github.com/jinhosung96/AutoPathGeneratorForUnity.git
+```
+
+Alternatively, you can add it directly to your `Packages/manifest.json`:
+```json
+{
+  "dependencies": {
+    "com.jhs-library.auto-path-generator": "https://github.com/jinhosung96/AutoPathGeneratorForUnity.git"
+  }
+}
+```
+
+To install a specific version, add the #{version} tag to the URL:
+```
+https://github.com/jinhosung96/AutoPathGeneratorForUnity.git#1.0.0
+```
 
 ## Usage
 

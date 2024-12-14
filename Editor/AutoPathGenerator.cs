@@ -8,7 +8,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace JHS.Library.AutoPathGenerator
+namespace JHS.Library.AutoPathGenerator.Editor
 {
     [InitializeOnLoad]
     public class AutoPathGenerator
@@ -63,7 +63,7 @@ namespace JHS.Library.AutoPathGenerator
         #region Editor Window
 
         [CustomEditor(typeof(AutoPathGeneratorConfig))]
-        public class AutoPathGeneratorConfigEditor : Editor
+        public class AutoPathGeneratorConfigEditor : UnityEditor.Editor
         {
             public override void OnInspectorGUI()
             {
